@@ -1,5 +1,7 @@
 import { createMainContent } from './main.js';
 import { createScoreContainer } from './score.js';
+import { createCommentSection } from './comment.js';
+
 
 
 const initializePage = () => {
@@ -17,4 +19,6 @@ const initializePage = () => {
 window.onload = () => {
     initializePage();
     createMainContent();
+    createScoreContainer();
+    createCommentSection();
 };
